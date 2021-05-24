@@ -55,7 +55,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLi
         return 0;
     
     hWnd = CreateWindow(ProgName, 
-        L"Lab 1 Ocheretenko", 
+        L"Lab 3 Lavrynovych", 
         WS_OVERLAPPEDWINDOW, 
         0, 
         0, 
