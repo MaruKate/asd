@@ -1,0 +1,28 @@
+# Project: laba2.1.c
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = asd2.1.1.o
+LINKOBJ  = asd2.1.1.o
+LIBS     = -L"D:/masha/Dev-Cpp/MinGW64/lib" -L"D:/masha/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"D:/masha/Dev-Cpp/MinGW64/include" -I"D:/masha/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/masha/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"D:/masha/Dev-Cpp/MinGW64/include" -I"D:/masha/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"D:/masha/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"D:/masha/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = laba2.1.c.exe
+CXXFLAGS = $(CXXINCS) -std=c99
+CFLAGS   = $(INCS) -std=c99
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+asd2.1.1.o: asd2.1.1.c
+	$(CC) -c asd2.1.1.c -o asd2.1.1.o $(CFLAGS)
