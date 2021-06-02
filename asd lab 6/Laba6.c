@@ -243,7 +243,7 @@ void simMatrix(int A[N][N], int* B[N][N]) {
 void mulmr(int* matrix[N][N], float k) {
     int element;
     float num;
-    srand(0507);
+    srand(0516);
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             num = (rand() / (float)RAND_MAX * 2) * k;
@@ -369,7 +369,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT messg, WPARAM wParam, LPARAM lParam) {
         SelectObject(hdc, BlackPen);
 
 
-        mulmr(A, (1.0 - 1 * 0.01 - 5 * 0.005 - 0.05));
+        mulmr(A, (1.0 - 1 * 0.01 - 6 * 0.005 - 0.05));
         simMatrix(A, B);
         weightMatrix(hdc, A, W);
         printMatrix(hdc, W);
