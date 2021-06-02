@@ -90,7 +90,7 @@ int peek(struct Stack* stack)
 
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 
-char ProgName[]="Лабораторна робота 5";
+char ProgName[]="Lab 5";
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLine, int nCmdShow){
     HWND hWnd;
@@ -111,7 +111,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLi
         return 0;
 
     hWnd=CreateWindow(ProgName,
-                      "Лабораторна робота 5. Лавринович Марія",
+                      "Lab 5. Lavrynovych Mariya",
                       WS_OVERLAPPEDWINDOW,
                       0,
                       0,
