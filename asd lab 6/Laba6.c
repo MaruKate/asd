@@ -369,7 +369,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT messg, WPARAM wParam, LPARAM lParam) {
         SelectObject(hdc, BlackPen);
 
 
-        mulmr(A, (1.0 - 1 * 0.01 - 7 * 0.005 - 0.05));
+        mulmr(A, (1.0 - 1 * 0.01 - 6 * 0.005 - 0.05));
         simMatrix(A, B);
         weightMatrix(hdc, A, W);
         printMatrix(hdc, W);
